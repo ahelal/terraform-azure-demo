@@ -1,0 +1,6 @@
+From nginx:1.17.1-alpine
+
+ARG COLOR
+ARG VERSION
+
+RUN echo "<html><body bgcolor='$COLOR'><h1>Hi I am Working APPP Version $VERSION.</h1><iframe src='/secrets' style='border:none;'></iframe></body></html>" > /usr/share/nginx/html/index.html
